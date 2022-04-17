@@ -76,7 +76,7 @@ function changerf(){
 
 //랜덤 배정 시작
 $(".button").click(function(){
-	
+    $(".tip").empty();
 	$(".tdisplay>ul").empty();
 	
 	memberlist = $('.memberarr>ul>li').get();
