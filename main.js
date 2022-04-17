@@ -2,6 +2,16 @@
 // 22.04.17 기준 중대 총인원
 const defaultmembers=Array("오상엽","이철희","길정민","이주형","정은건","김경환","이윤복","전재혁","김민서","박범수","김도현","김태권","이희서","김강민","김차민","양영진","권 평","조정우","송재용");
 
+// 컴퓨터 접속시 알림
+var filter = "win16|win32|win64|mac|macintel";
+if ( navigator.platform ) {
+if ( filter.indexOf( navigator.platform.toLowerCase() ) >= 0 ) {
+		alert("모바일에 최적화되어 있습니다");
+	}
+}
+
+
+
 // 어레이 셔플
 function shuffle(array) { 
 	array.sort(() => Math.random() - 0.5); 
